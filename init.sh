@@ -16,5 +16,5 @@ export GOPATH=/home/ubuntu/go
 #cd ~/CollectServer/CollectServer
 #go build ~/CollectServer/CollectServer/server.go
 
-cd ~/CollectServer
+cd ~/WorkerServer
 sudo sh server.sh

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-cd ~/CollectServer/CollectServer
+cd ~/WorkerServer/WorkerServer
 sudo pmgo start . app
