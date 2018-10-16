@@ -8,7 +8,7 @@ go get -u golang.org/x/net/websocket
 go get -u github.com/googollee/go-socket.io
 go get -u github.com/rs/cors
 go get -u github.com/graarh/golang-socketio
-
+go get -u github.com/streadway/amqp
 ```
 
 ## 사용한 예제
