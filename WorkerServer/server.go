@@ -103,7 +103,7 @@ func rabbitmqRec() {
 
 			bodyString := `testresult,isp=%s,platform=%s,region=%s name="%s",url="%s",status=%d,method="%s",responsetime=%d`
 			bodyString = fmt.Sprintf(bodyString, visitData.Isp, visitData.Platform, visitData.Region, visitData.Name, visitData.Url, visitData.Status, visitData.Method, visitData.ResponseTime)
-			resp, err := http.Post("http://localhost:8086/write?db=redstop", "", bytes.NewBuffer([]byte(bodyString)))
+			resp, err := http.Post(conf.Conf.Server.TimeSeriesServer+"/write?db=redstop", "", bytes.NewBuffer([]byte(bodyString)))
 			log.Println(resp, &err == nil)
 			log.Println(" [x] receive", !(&d == nil))
 		}

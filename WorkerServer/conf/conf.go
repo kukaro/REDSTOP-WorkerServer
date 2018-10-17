@@ -33,10 +33,11 @@ type static struct {
 }
 
 type server struct {
-	Addr            string `toml:"addr"`
-	DomainApi       string `toml:"domain_api"`
-	DomainWeb       string `toml:"domain_web"`
-	DomainWebSocket string `toml:"domain_web_socket"`
+	Addr             string `toml:"addr"`
+	DomainApi        string `toml:"domain_api"`
+	DomainWeb        string `toml:"domain_web"`
+	DomainWebSocket  string `toml:"domain_web_socket"`
+	TimeSeriesServer string `toml:"time_series_server"`
 }
 
 func Init(configFile string) error {

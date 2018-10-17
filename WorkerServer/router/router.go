@@ -35,7 +35,6 @@ func RunSubDomains() {
 			/*error state*/
 			err = echo.ErrNotFound
 		} else {
-			fmt.Println("inside")
 			host.Echo.ServeHTTP(res, req)
 		}
 		return

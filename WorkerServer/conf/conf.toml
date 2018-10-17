@@ -9,7 +9,8 @@ type = "DEFAULT" #default is normal static
 addr = ":7000"
 domain_web = "54.180.31.203:7000/"
 domain_api = "54.180.31.203:7000/api"
-domain_web_socket = "54.180.31.203::7000/ws"
+domain_web_socket = "54.180.31.203:7000/ws"
+time_series_server = "http://52.79.135.42:8086"
 
 [testServer]
 test_domain = "http://localhost:3000/"
