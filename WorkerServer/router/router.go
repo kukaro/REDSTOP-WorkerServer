@@ -30,6 +30,7 @@ func RunSubDomains() {
 
 		firstUri := strings.Split(req.RequestURI, "/")[1]
 		fmt.Println(req.Host + "/" + firstUri)
+		fmt.Println(conf.Conf.Server.DomainApi)
 		if host := hosts[req.Host+"/"+firstUri]; host == nil {
 			/*error state*/
 			err = echo.ErrNotFound
