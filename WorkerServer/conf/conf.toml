@@ -7,9 +7,9 @@ type = "DEFAULT" #default is normal static
 
 [server]
 addr = ":7000"
-domain_web = "localhost:7000/"
-domain_api = "localhost:7000/api"
-domain_web_socket = "localhost:7000/ws"
+domain_web = "54.180.31.203:7000/"
+domain_api = "54.180.31.203:7000/api"
+domain_web_socket = "54.180.31.203::7000/ws"
 
 [testServer]
 test_domain = "http://localhost:3000/"

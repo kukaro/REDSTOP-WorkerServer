@@ -1,4 +1,4 @@
-# REDSTOP-CollectServer
+# REDSTOP-WorkerServer
 
 ## 사용한 라이브러리
 ```
